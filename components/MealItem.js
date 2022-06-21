@@ -1,9 +1,16 @@
 import { View, Text, Pressable, Image, StyleSheet } from "react-native";
 
-function MealItem({ title, imagePath, duration, complexity, affordability }) {
+function MealItem({
+  title,
+  imagePath,
+  duration,
+  complexity,
+  affordability,
+  onPressCustomMeal,
+}) {
   return (
     <View style={styles.mealItem}>
-      <Pressable android_ripple={{ color: "#ccc" }}>
+      <Pressable android_ripple={{ color: "#ccc" }} onPress={onPressCustomMeal}>
         <View>
           <Image source={{ uri: imagePath }} style={styles.image} />
           <Text style={styles.title}>{title}</Text>
