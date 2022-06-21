@@ -7,8 +7,12 @@ import { CATEGORIES } from "../data/dummy-data";
 function CategoriesScreen({ navigation }) {
   //utilizes arguement passed by the parent function, else bind method could have been used.
   function renderCategoryItem(itemData) {
+    //itemData prop is provided by FlatList
     function pressHandler() {
-      navigation.navigate("MealsOverview");
+      navigation.navigate("MealsOverview", {
+        categoryId: itemData.item.id,
+      });
+      //pass data as the second parameter i.e options object {}
     }
     return (
       <CategoryGridTile
