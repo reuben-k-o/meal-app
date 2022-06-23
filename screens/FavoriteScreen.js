@@ -1,7 +1,7 @@
-import { View, StyleSheet } from "react-native";
+import { Text, StyleSheet } from "react-native";
 
 function FavoriteScreen() {
-  return <View>Favorite screen</View>;
+  return <Text>Favorite screen</Text>;
 }
 
 export default FavoriteScreen;

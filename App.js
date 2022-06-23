@@ -8,6 +8,7 @@ import { Ionicons } from "@expo/vector-icons";
 import CategoriesScreen from "./screens/CategoriesScreen";
 import MealsOverviewScreen from "./screens/MealsOverviewScreen";
 import MealDetailScreen from "./screens/MealDetailScreen";
+import FavoriteScreen from "./screens/FavoriteScreen";
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -37,7 +38,7 @@ function DrawerNavigator() {
       />
       <Drawer.Screen
         name="Favorites"
-        component={FavoritesScreen}
+        component={FavoriteScreen}
         options={{
           drawerIcon: ({ color, size }) => (
             <Ionicons name="star" color={color} size={size} />
