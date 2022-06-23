@@ -1,12 +1,16 @@
+import { useContext } from "react";
 import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
 import { MEALS } from "../data/dummy-data";
 
 import MealDetails from "../components/MealDetails";
 import Subtitle from "../components/MealDetail/Subtitle";
 import List from "../components/MealDetail/List";
+import { FavoriteContext } from "../store/context/Favorites-context";
 
 function MealDetailScreen({ route }) {
   const mealId = route.params.mealId;
+
+  const FavoriteMealCtx = useContext(FavoriteContext);
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
 
