@@ -30,3 +30,5 @@ function FavoriteContexProvider({ children }) {
     </FavoriteContext.Provider>
   );
 }
+
+export default FavoriteContexProvider;
