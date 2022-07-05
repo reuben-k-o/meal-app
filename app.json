@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MealApp",
-    "slug": "MealApp",
+    "name": "Recipe App",
+    "slug": "Recipe-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "backgroundColor": "#24180f",
