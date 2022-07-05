@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const FavoriteContext = createContext({
   ids: [],
   addFavorite: (id) => {},
-  removerFavorite: (id) => {},
+  removeFavorite: (id) => {},
 });
 
 function FavoriteContexProvider({ children }) {

@@ -57,7 +57,7 @@ export default function App() {
     <>
       <StatusBar style="light" />
       {/* <FavoriteContexProvider> */}
-      <Provider store={store} >
+      <Provider store={store}>
         <NavigationContainer>
           <Stack.Navigator
             screenOptions={{
